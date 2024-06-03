@@ -1,0 +1,337 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #f00, #ff0);
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links li {
+    margin-left: 1rem;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .download-btn {
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-buttons .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+}
+
+.hero-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.award-badge {
+    margin-top: 1rem;
+}
+
+.features, .advantages, .testimonials, .faq, .cta {
+    padding: 2rem;
+    text-align: center;
+}
+
+.features h2, .advantages h2, .testimonials h2, .faq h2, .cta h2 {
+    margin-bottom: 1rem;
+}
+
+.feature-list, .advantage-list, .faq-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.feature, .advantage, .faq-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.advantage-list {
+    position: relative;
+}
+
+.why-choose-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-content {
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.testimonial-author img {
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.testimonial-users img {
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.cta {
+    background: #f0f0f0;
+    padding: 4rem 2rem;
+}
+
+.cta p {
+    margin: 1rem 0;
+}
+
+.cta .download-app {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+}
+
+.footer-content div {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-newsletter button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: #000;
+}
+
+.footer-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content p, .footer-content a {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-newsletter input[type="email"] {
+    width: 100%;
+}
+
+.footer-newsletter button {
+    width: 100%;
+}
+
+.footer-newsletter input:focus, .footer-newsletter button:focus {
+    outline: none;
+}
+
+.footer-newsletter input::placeholder {
+    color: #999;
+}
+
+.footer-newsletter input:focus::placeholder {
+    color: #333;
+}
+
+.footer-newsletter button:hover {
+    background: #555;
+}
+
+.footer-content a:hover {
+    color: #ccc;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 0.75rem;
+}
+
+.footer-newsletter button {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.footer-newsletter input:focus, .footer-newsletter button:focus {
+    border: 1px solid #000;
+}
+
+.footer-newsletter input[type="email"] {
+    border: 1px solid #ddd;
+}
+
+.footer-newsletter button {
+    border: 1px solid #ddd;
+}
+
+.footer-newsletter input:focus, .footer-newsletter button:focus {
+    border: 1px solid #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+    }
+    nav .logo {
+        margin: auto;
+    }
+    nav .download-btn {
+        display: none;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-list, .advantage-list, .faq-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-choose-image {
+        max-width: 100%;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .features h2, .advantages h2, .testimonials h2, .faq h2, .cta h2 {
+        font-size: 1.5rem;
+    }
+    .feature, .advantage, .faq-item {
+        width: 100%;
+        max-width: 90%;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+    .hero-buttons .btn {
+        margin-bottom: 1rem;
+    }
+    .testimonial-content {
+        text-align: center;
+    }
+    .testimonial-author {
+        justify-content: center;
+    }
+    .cta {
+        padding: 2rem 1rem;
+    }
+}
