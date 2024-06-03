@@ -89,69 +89,69 @@ nav .download-btn {
     position: relative;
     top: 0;
     left: 0;    
+    transition: transform 0.3s, opacity 0.3s;
 
 }
-.img{
+.imag1{
     position: absolute;
-    height: auto;
+    top: 0;
+    left: 0px;
+    opacity: 0.8; /* Adjust opacity if needed */
     transition: transform 0.3s, opacity 0.3s;
 }
-
-.imag1{
-    transform: rotate(-10deg);
-    top: 30px;
-    left: 0;
+.imag1:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }
-
 .imag2{
-    transform: rotate(0deg);
+    position: absolute;
     top: 0;
-    left: 20px;
+    left: 0;
+    opacity: 0.8; /* Adjust opacity if needed */
+    transition: transform 0.3s, opacity 0.3s;
 }
-
+.imag2:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
 .imag3{
-    transform: rotate(10deg);
-    top: 30px;
-    left: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8; /* Adjust opacity if needed */
+    transition: transform 0.3s, opacity 0.3s;
 }
-
+.imag3:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
 .award-badge {
     margin-top: 1rem;
 }
-.Featureh1 h1{
-    float: right;
-    margin-right: 220px;
 
-}
-.features h2{
-    margin-top: 40px;
-    margin-right: 20px;
-
-}
-
-/* .features, .advantages, .testimonials, .faq, .cta {
+.features, .advantages, .testimonials, .faq, .cta {
     padding: 2rem;
     text-align: center;
-} */
+}
 
-/* .features h2, .advantages h2, .testimonials h2, .faq h2, .cta h2 {
+.features h2, .advantages h2, .testimonials h2, .faq h2, .cta h2 {
     margin-bottom: 1rem;
-} */
-/* 
+}
+
 .feature-list, .advantage-list, .faq-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-} */
-/* 
+}
+
 .feature, .advantage, .faq-item {
     flex: 1;
     min-width: 250px;
     padding: 1rem;
     background: #f9f9f9;
     border-radius: 5px;
-} */
+}
 
 .advantage-list {
     position: relative;

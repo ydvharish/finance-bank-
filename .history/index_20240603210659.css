@@ -118,40 +118,30 @@ nav .download-btn {
 .award-badge {
     margin-top: 1rem;
 }
-.Featureh1 h1{
-    float: right;
-    margin-right: 220px;
 
-}
-.features h2{
-    margin-top: 40px;
-    margin-right: 20px;
-
-}
-
-/* .features, .advantages, .testimonials, .faq, .cta {
+.features, .advantages, .testimonials, .faq, .cta {
     padding: 2rem;
     text-align: center;
-} */
+}
 
-/* .features h2, .advantages h2, .testimonials h2, .faq h2, .cta h2 {
+.features h2, .advantages h2, .testimonials h2, .faq h2, .cta h2 {
     margin-bottom: 1rem;
-} */
-/* 
+}
+
 .feature-list, .advantage-list, .faq-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-} */
-/* 
+}
+
 .feature, .advantage, .faq-item {
     flex: 1;
     min-width: 250px;
     padding: 1rem;
     background: #f9f9f9;
     border-radius: 5px;
-} */
+}
 
 .advantage-list {
     position: relative;
